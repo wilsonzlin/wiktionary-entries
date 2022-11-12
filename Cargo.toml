@@ -1,0 +1,6 @@
+[package]
+name = "wiktionary-entries"
+version = "20221101.0.1"
+edition = "2021"
+
+[dependencies]
