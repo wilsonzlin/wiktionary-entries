@@ -1,7 +1,7 @@
 [package]
 name = "wiktionary-entries"
 description = "Build filtered list of page titles from the Wiktionary main namespace"
-version = "2022110102.0.0"
+version = "2022110102.0.1"
 edition = "2021"
 repository = "https://github.com/wilsonzlin/wiktionary-entries.git"
 authors = ["Wilson Lin <code@wilsonl.in>"]
