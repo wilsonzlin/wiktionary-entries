@@ -1,12 +1,16 @@
 [package]
 name = "wiktionary-entries"
-description = "Filtered list of page titles in the Wiktionary main namespace"
+description = "Build filtered list of page titles from the Wiktionary main namespace"
 version = "20221101.0.1"
 edition = "2021"
 repository = "https://github.com/wilsonzlin/wiktionary-entries.git"
 authors = ["Wilson Lin <code@wilsonl.in>"]
 license = "CC-BY-SA-3.0 OR GFDL-1.1-only"
 
+[dependencies]
+fastrie = "0.2"
+
 [build-dependencies]
+fastrie = "0.2"
 flate2 = "1.0"
 reqwest = { version = "0.11", features = ["blocking"] }
