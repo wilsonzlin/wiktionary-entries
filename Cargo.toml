@@ -1,5 +1,6 @@
 [package]
 name = "wiktionary-entries"
+description = "Filtered list of page titles in the Wiktionary main namespace"
 version = "20221101.0.1"
 edition = "2021"
 include = ["/src/**/*", "/build.rs", "/Cargo.toml", "/entries.txt"]
