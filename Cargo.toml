@@ -5,7 +5,7 @@ version = "20221101.0.1"
 edition = "2021"
 repository = "https://github.com/wilsonzlin/wiktionary-entries.git"
 authors = ["Wilson Lin <code@wilsonl.in>"]
-license = "CC-BY-SA OR GFDL"
+license = "CC-BY-SA-3.0 OR GFDL-1.1-only"
 
 [build-dependencies]
 flate2 = "1.0"
