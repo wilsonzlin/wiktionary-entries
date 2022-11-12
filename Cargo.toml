@@ -2,5 +2,9 @@
 name = "wiktionary-entries"
 version = "20221101.0.1"
 edition = "2021"
+include = ["/src/**/*", "/build.rs", "/Cargo.toml", "/entries.txt"]
+repository = "https://github.com/wilsonzlin/wiktionary-entries.git"
+authors = ["Wilson Lin <code@wilsonl.in>"]
+license = "CC-BY-SA OR GFDL"
 
 [dependencies]
