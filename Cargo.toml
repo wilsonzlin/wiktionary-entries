@@ -8,9 +8,7 @@ authors = ["Wilson Lin <code@wilsonl.in>"]
 license = "CC-BY-SA-3.0 OR GFDL-1.1-only"
 
 [dependencies]
-fastrie = "0.2"
-
-[build-dependencies]
+clap = { version = "4.0", features = ["derive"] }
 fastrie = "0.2"
 flate2 = "1.0"
 reqwest = { version = "0.11", features = ["blocking"] }

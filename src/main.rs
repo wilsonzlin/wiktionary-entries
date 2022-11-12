@@ -1,6 +1,6 @@
+use clap::Parser;
 use flate2::read::GzDecoder;
 use reqwest::blocking::get;
-use std::env::var;
 use std::fs::File;
 use std::io::Read;
 use std::io::Write;
@@ -10,11 +10,11 @@ use std::path::PathBuf;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Cli {
-    /// If provided, data will be written to this file.
-    output_data: Option<PathBuf>,
+  /// If provided, data will be written to this file.
+  output_data: Option<PathBuf>,
 
-    /// If provided, Rust source code with embedded data will be generated and written to this file.
-    output_code: Option<PathBuf>,
+  /// If provided, Rust source code with embedded data will be generated and written to this file.
+  output_code: Option<PathBuf>,
 }
 
 fn main() {
@@ -33,7 +33,7 @@ fn main() {
   let mut lines = String::new();
   d.read_to_string(&mut lines).unwrap();
   eprintln!("Decompressed file");
-  
+
   let mut builder = fastrie::FastrieBuilderNode::new(fastrie::IndexWidth(4));
   for (i, line) in lines.split('\n').enumerate() {
     let line = line.trim();
