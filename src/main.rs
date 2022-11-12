@@ -11,9 +11,11 @@ use std::path::PathBuf;
 #[command(author, version, about, long_about = None)]
 struct Cli {
   /// If provided, data will be written to this file.
+  /// #[arg(long)]
   output_data: Option<PathBuf>,
 
   /// If provided, Rust source code with embedded data will be generated and written to this file.
+  /// #[arg(long)]
   output_code: Option<PathBuf>,
 }
 
