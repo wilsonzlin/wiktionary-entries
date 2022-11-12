@@ -3,9 +3,10 @@ name = "wiktionary-entries"
 description = "Filtered list of page titles in the Wiktionary main namespace"
 version = "20221101.0.1"
 edition = "2021"
-include = ["/src/**/*", "/build.rs", "/Cargo.toml", "/entries.txt"]
 repository = "https://github.com/wilsonzlin/wiktionary-entries.git"
 authors = ["Wilson Lin <code@wilsonl.in>"]
 license = "CC-BY-SA OR GFDL"
 
-[dependencies]
+[build-dependencies]
+flate2 = "1.0"
+reqwest = { version = "0.11", features = ["blocking"] }
